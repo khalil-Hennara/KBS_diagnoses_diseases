@@ -1,0 +1,116 @@
+
+#Rule 1
+
+IF   Epigatric_Abdominal_Pain_Heart_Burn		0.7		//الم معدة
+And  Regurgitation                                0.4		//ارتجاع طعامي
+And  dysphagia					0.4		//عسربلع
+Then Gastro_esphageal_refulx					//القلس المعدي المريئي
+
+////////////////////////////////////
+
+#Rule 2
+
+IF   Epigastric_abdominal_Pain_Relieved_with_Food  0.7     	//الم في راس المعدة
+And  Nousea					 0.3		//غثيان
+And  bleeding_vomiting				 0.5		//اقياء مدمى
+And  Ulcers_and_Erosions_in_doudenum		 0.9		//بالتنظير يظهر تاكل وتقرح بالعفج
+Then Doudenum_Ulcer						//القرحة العفجية
+
+
+////////////////////////////////////
+
+#Rule 3
+
+IF   Epigastric_abdominal_Pain_Worsed_with_Food    0.7 		//الم في راس المعدة
+And  Nousea					 0.3		//غثيان
+And  bleeding_vomiting				 0.5		//اقياء مدمى   
+And  Ulcers_and_Erosions_in_Stomach		 0.9		// بالتنظير يظهر تاكل وتقرح بالمعدة
+Then Gastric_Ulcer						//القرحة المعدية
+
+//////////////////////////////////////////
+
+#Rule 4
+
+IF   Chronic_Greasy_diarrhea			0.7		//اسهال دهني مزمن
+And  weigh_loss					0.6		//فقدان وزن
+And  Himoglobin					0.4		//فقر دم
+And  IgA_ATTA					0.9		//مخبريا :ايجابية الاضض
+And  IgA_AGA					0.7		//ايجابية الاضاض
+And  Blunted_Villi				0.9		//ضمور زغابات
+And  Super_Facial__inFlammatory_Infiltrate	0.8		//ارتشاح التهابي بالظهارة
+Then Celiac_disease						//الداء الزلاقي
+
+///////////////////////////////////////////
+
+#Rule 5
+
+IF   Grossly_bloody_diarrhea			0.7		//اسهال مدمي حاد
+And  Tenesmus					0.3		//زحير
+And  Diffuse_Ulceraion				0.7		//تنظير:تقرحات منتشرة 
+And  Pseudo_Polplus				0.5		//بوليبات كاذبة
+And  Superficial_chronic_inflammation		0.8		//التهاب مزمن بالظهارة 
+And  crypt_abscess				0.6		//خراجات خفية
+Then Ulcerative_Colitis						//التهاب الكولون القرحي
+
+////////////////////////////////////////////
+
+#Rule 6
+
+IF   abdominal_Pain				0.6		//الم في المعدة
+And  Fever					0.2		//حمى
+And  Weigh_Loss					0.3		//فقدان وزن
+And  non-Grossly_bloody_diarrhea			0.7		//اسهال مدمي خفيف
+And  deep_and_long_fissures			0.8		//تنظير:شقوق عريضة وطويلة ضمن القولون
+And  Cobblestoning				0.9		//منظر حجارو الرصيف
+Then Crohn's							//داء كرون
+
+
+////////////////////////////////////////////
+
+
+#Rule 7
+
+IF   Epigastric_abdominal_pain_back_pain		0.6		//الم بطني في راس المعدة 			
+And  Nausea					0.4		//غيثان
+And  Vomiting					0.4		//اقياء
+And  Amylas>3* upper_limit_Normal		0.6		//مخبريا :ارتفاع الميلاز عن الطبيعي ثلاث مرات
+And  Lipas>3* upper_limit_Normal			0.8  		//مخبريا :ارتفاع الليباز عن الطبيعي ثلاث مرات
+Then Acut_Pancreatitis						//التهاب البنكرياس الحاد
+
+
+/////////////////////////////////////////////
+
+#Rule 8
+
+IF   Right_Upper_quadrant_pain_Shoulder_right     0.7		//لم في القسم اليميني من المعدة
+And  Nausea					0.2		//غيثان 
+And  vomiting					0.2		//اقياء
+And  Fever					0.2		//حمى
+And  GallBladder_Wall_Thickening			0.8		//يكو:سماكة بجدران المرارة
+And  Pericholecystic_Fluid			0.7		//استسقاء مرارة
+Then Cholecystitis						//التهاب مرارة
+
+
+///////// /////////////////////////////////////
+
+#Rule 9
+
+IF   Right_Upper_quadrant_pain			0.7		//الم في القسم اليميني من المعدة
+And  Jaundic					0.7		//يرقان
+And  Fever					0.7		//حمى
+And  high_value_in_Bilirubin			0.6		//مخبريا:ارتفاع في بيلوربين
+And  high_value_in_white_blood_cells		0.5		//مخبريا:ارتفاع في كريات الدم البيضاء
+Then  Cholangitis						//التهاب الطرق الصفراوية
+
+
+///////////////////////////////////////////////
+
+
+#Rule 10
+
+IF   Abdominal_Pain_worsee_by_food_and Stress	0.8		//الم في المعدة يسوء بتناول الطعام والضغط النفسي
+And  Constipation_OR_diarrhea			0.2		//اسهال او اكتام
+And  Abdominal_Flatulence			0.5		//نفخة في المعدة
+Then Irritable_bowel_syndrome(IBS)				//القولون العصبي
+
+

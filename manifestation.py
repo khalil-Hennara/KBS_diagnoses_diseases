@@ -1,0 +1,81 @@
+from enum import IntEnum
+
+class Clinic(IntEnum):
+   #Abdominal
+    HEART_BURN = 0
+    REGURGITATION = 1 
+    DYSPHAGIA = 2     
+    #ABdominal
+    ABDOMINAL_PAIN = 3
+    NOUSEA = 4
+    BLEEDING_VOMITING = 5
+    CHRONIC_GREASY_DIARRHEA = 6
+    WEIGH_LOSS = 7    
+    GROSSLY_BLOODY_DIARRHEA = 8
+    TENESMUS = 9
+    #side Manifestaion
+    ERYTHEMA_NODOSUM = 10
+    UVEITIS = 11
+    SERONEG_ARTHRITIS = 12
+    FAVER = 13      
+    NON_GROSSLY_BLOODY_DIARRHEA = 14
+    VOMITING = 15
+    JAUNDIC = 16    
+    CONSTIPATION = 17
+    dIARRHEA = 18
+    ABDOMINAL_FLATULENCE = 19
+    BILE_VOMITTING = 20
+    EPIGASTRIC_ABDOMINAL_PAIN_RELIVED_WITH_FOOD = 21
+    EPIGASTRIC_ABDOMINAL_PAIN_WORSED_WITH_FOOD = 22
+    RIGHT_UPPER_QUADRANT_PAIN_SHOULDER_RIGHT =23
+    LEFT_UPPER_QUADRANT_PAIN=24
+    RIGHT_UPPER_QUADRANT_PAIN=25
+    EPIGASTRIC_ABDOMINAL_PAIN_WITH_BACK_PAIN=26
+    EPIGASTRIC_ABDOMINAL_PAIN=27
+    ABDOMINAL_PAIN_WORSE_BY_FOOD=28
+    ABDOMINAL_PAIN_WORSE_BY_STRESS=29
+    
+    
+    
+class EGD(IntEnum):
+    ULCERS_AND_EROSIONS_IN_DOUDENUM = 100
+    ULCERS_AND_EROSIONS_IN_STOMACH = 101
+    BLUNTED_VILLI = 102
+    SUPER_FACIAL_INFLAMMATORY_INFILTRATE = 103
+    DIFFUSE_ULCERAION = 104
+    PSEUDO_POLPLUS = 105
+    SUPERFICIAL_CHRONIC_INFLAMMATION = 106
+    CRYPT_ABSCESS = 107
+    DEEP_AND_LONG_FISSURES = 108
+    COBBLESTONING = 109
+    
+
+class LABS(IntEnum):
+    IGA_ATTA = 200
+    IGA_AGA = 201
+    AMYLAS = 202
+    LIBAS = 203
+    BILIRUBIN = 204
+    WHITE_BLOOD_CELLS = 205
+    PLATLTE = 206
+    HIMOGLOBIN = 207
+    
+class ECHO(IntEnum):
+    GALLBLADDER_WALL_THICKENING = 300
+    PERICHOLECYSTIC_FLUID = 301
+    HIBATOMIGALI = 302 #ضخامة كبدية
+    SPLINO_MIGALI = 303 #ضخامة طحال
+    FREE_LIQUADE = 304     
+
+    
+class DISEASE(IntEnum):
+    GASTRO_ESPHAGEAL_REFLUX=400    #القلس المعدي المريئي
+    DOUDENUM_ULCER=401             #القرحة العفجية
+    GASTRIC_ULCER=402              #القرحة المعدية
+    CELIAC_DISEASE=403             #الداء الزلاقي
+    ULCERATIVE_COLITIS=404         #التهاب الكولون القرحي
+    CROHN_DISEASE=405              #داء كرون
+    ACUT_PANCREATITIS=406          #التهاب البنكرياس الحاد
+    CHOLECYSTITIS=407              #التهاب مرارة
+    CHOLANGITIS=408                #التهاب الطرق الصفراوية
+    IBS=409                       #Irritable_bowel_syndrome القولون العصبي

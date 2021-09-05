@@ -1,0 +1,120 @@
+
+#Rule 1
+
+IF   Heart_Burn                                   		//حرقة خلف القص
+And  Regurgitation                                		//ارتجاع طعامي
+And  dysphagia							//عسربلع
+Then Gastro_esphageal_refulx					//القلس المعدي المريئي
+
+////////////////////////////////////
+
+#Rule 2
+
+IF   Epigastric_abdominal_Pain_Relieved_with_Food   	     	//الم في راس المعدة
+And  Nousea					 		//غثيان
+And  bleeding_vomiting				 		//اقياء مدمى
+And  Ulcers_and_Erosions_in_doudenum		 		//بالتنظير يظهر تاكل وتقرح بالعفج
+Then Doudenum_Ulcer						//القرحة العفجية
+
+
+////////////////////////////////////
+
+#Rule 3
+
+IF   Epigastric_abdominal_Pain_Worsed_with_Food     		//الم في راس المعدة
+And  Nousea					 		//غثيان
+And  bleeding_vomiting				 		//اقياء مدمى   		 
+And  Ulcers_and_Erosions_in_Stomach		 		// بالتنظير يظهر تاكل وتقرح بالمعدة
+Then Gastric_Ulcer						//القرحة المعدية
+
+//////////////////////////////////////////
+
+#Rule 4
+
+IF   Chronic_Greasy_diarrhea					//اسهال دهني مزمن
+And  weigh_loss							//فقدان وزن
+And  anemia							//فقر دم
+And  IgA_ATTA							//مخبريا :ايجابية الاضض
+And  IgA_AGA							//ايجابية الاضاض
+And  Blunted_Villi						//ضمور زغابات
+And  Super_Facial__inFlammatory_Infiltrate			//ارتشاح التهابي بالظهارة
+Then Celiac disease						//الداء الزلاقي
+
+///////////////////////////////////////////
+
+#Rule 5
+
+IF   Grossly_bloody_diarrhea					//اسهال مدمي حاد
+And  Tenesmus							//زحير
+And  Erythema_nodosum						//حمامة عقدة اي ظهور بقع حمراء على اليدين والقدمين
+And  Uveitis							//التهلب في قزحية العين
+And  Seroneg_arthritis						//التهاب مفاصل 
+And  Diffuse_Ulceraion						//تنظير:تقرحات منتشرة 
+And  Pseudo_Polplus						//بوليبات كاذبة
+And  Superficial_chronic_inflammation				//التهاب مزمن بالظهارة 
+And  crypt_abscess						//خراجات خفية
+Then Ulcerative_Colitis						//التهاب الكولون القرحي
+
+////////////////////////////////////////////
+
+#Rule 6
+
+IF   abdominal_Pain						//الم في المعدة
+And  Fever							//حمى
+And  Weigh_Loss							//فقدان وزن
+And  non_Grossly_bloody_diarrhea					//اسهال مدمي خفيف
+And  deep_and_long_fissures					//تنظير:شقوق عريضة وطويلة ضمن القولون
+And  Cobblestoning						//منظر حجارو الرصيف
+Then Crohn's							//داء كرون
+
+
+////////////////////////////////////////////
+
+
+#Rule 7
+
+IF   Epigastric_abdominal_pain					//الم بطني في راس المعدة 				
+And  Nausea							//غيثان
+And  Vomiting							//اقياء
+And  Amylas>3* upper_limit_Normal				//مخبريا :ارتفاع الميلاز عن الطبيعي ثلاث مرات
+And  Lipas>3* upper_limit_Normal			  		//مخبريا :ارتفاع الليباز عن الطبيعي ثلاث مرات
+Then Acut_Pancreatitis						//التهاب البنكرياس الحاد
+
+
+/////////////////////////////////////////////
+
+#Rule 8
+
+IF   Right_Upper_quadrant_pain_Shoulder_right     		//لم في القسم اليميني من المعدة
+And  Nausea							//غيثان 
+And  vomiting							//اقياء
+And  Fever							//حمى
+And  GallBladder_Wall_Thickening					//يكو:سماكة بجدران المرارة
+And  Pericholecystic_Fluid					//استسقاء مرارة
+Then Cholecystitis						//التهاب مرارة
+
+
+///////// /////////////////////////////////////
+
+#Rule 9
+
+IF   Right_Upper_quadrant_pain					//الم في القسم اليميني من المعدة
+And  Jaundic							//يرقان
+And  Fever							//حمى
+And  high_value_in_Bilirubin					//مخبريا:ارتفاع في بيلوربين
+And  high_value_in_white_blood_cells				//مخبريا:ارتفاع في كريات الدم البيضاء
+Then  Cholangitis						//التهاب الطرق الصفراوية
+
+
+///////////////////////////////////////////////
+
+
+#Rule 10
+
+IF   Abdominal_Pain_worsee_by_food_and Stress			//الم في المعدة يسوء بتناول الطعام والضغط النفسي
+And  Constipation_OR_diarrhea					//اسهال او اكتام
+And  Abdominal_Flatulence					//نفخة في المعدة
+Then Irritable_bowel_syndrome(IBS)				//القولون العصبي
+
+
+
